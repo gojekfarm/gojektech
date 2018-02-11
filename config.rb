@@ -4,7 +4,9 @@
 # vi: set fileencoding=utf-8 :
 # encoding: utf-8
 
+###
 # Page settings:
+###
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
@@ -17,7 +19,10 @@ set :css_dir, 'assets/styles'
 set :js_dir, 'assets/scripts'
 set :images_dir, 'assets/images'
 set :trailing_slash, false
+
+activate :sprockets
 activate :directory_indexes
+
 
 ###
 # Helpers
@@ -45,8 +50,11 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :relative_assets
+
   set :relative_links, true
+
   activate :autoprefixer do |prefix|
+    # noinspection RubyResolve
     prefix.browsers = 'last 2 versions'
   end
 end
