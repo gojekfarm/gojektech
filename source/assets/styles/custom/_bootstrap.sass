@@ -1,7 +1,21 @@
+.navbar
+  background: rgba(255,255,255,0.7)
+  &__brand-text
+    color: #040707
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    font-size: 2.0rem
+    line-height: 3.25rem
+
+.navbar-header
+  float: left
+  text-align: center
+  width: 100%
+
 .header-hero
   width: 100%
   height: 90%
-  min-height: 500px
+  min-height: 600px
   max-height: 760px
 
   // noinspection CssUnknownTarget
@@ -11,22 +25,11 @@
   display: table
   margin-bottom: 100px
 
-  &__nav
-    padding-left: 2.5rem
-
-  &__navbar-brand-text
-    color: #040707
-    font-family: 'Roboto', sans-serif
-    font-weight: bold
-    font-size: 2.0rem
-    line-height: 3.25rem
-
   &__jumbotron
     font-family: 'Neo Sans Pro', serif
     color: #009444
 
-    display: table-cell
-    vertical-align: middle
+    padding-top: 8em
     background: transparent
 
     h1
