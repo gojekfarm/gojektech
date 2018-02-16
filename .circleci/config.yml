@@ -39,7 +39,7 @@ jobs:
             bundle install --jobs=4 --retry=3 --path vendor
       - add_ssh_keys:
           fingerprints:
-            - ""
+            - "f5:ca:68:89:fa:fb:23:4a:6f:7a:11:fa:67:96:d2:33"
       - run:
           name: Run Setup Script
           command: bash .circleci/setup.sh
