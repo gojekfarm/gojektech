@@ -1,6 +1,4 @@
-# GO-JEK Tech
-
-[![CircleCI](https://circleci.com/gh/gojektech/gojektech.svg?style=svg)](https://circleci.com/gh/gojektech/gojektech)
+# GO-JEK Tech [![CircleCI](https://circleci.com/gh/gojektech/gojektech.svg?style=svg)](https://circleci.com/gh/gojektech/gojektech)
 
 ## Description
 
